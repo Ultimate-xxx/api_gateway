@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 平台落地页骨架</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" aria-label="顶部导航栏">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="#" class="brand" aria-label="Logo 与网站名称">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">网站名称</span>
+        </a>
+        <a href="#" class="nav-link nav-link-home">首页</a>
+        <a href="#" class="nav-link">热门模型</a>
+        <a href="#" class="nav-link">优惠套餐</a>
+        <a href="#" class="nav-link">产品价格</a>
+      </div>
+      <div class="navbar-right">
+        <a href="#" class="nav-link">文档</a>
+        <a href="#" class="nav-link nav-link-console">控制台</a>
+        <a href="#" class="nav-link nav-link-lang">简体中文 <span class="caret" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="hero-section" aria-label="主视觉区">
+      <video class="hero-video" autoplay loop muted playsinline preload="metadata">
+        <source src="homepage.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">模型免魔法、开箱即用免开户、低价优惠折扣</h1>
+        <p class="hero-subtitle">一站式顶尖模型API融合平台</p>
+        <div class="hero-actions">
+          <a href="#" class="hero-btn">AI魔法</a>
+          <a href="#" class="hero-btn">开始体验</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true"></div>
+    </section>
+
+    <section class="model-logos" aria-label="模型展示区">
+      <div class="section-head">
+        <h2 class="section-title">全面访问所有顶级 AI 模型</h2>
+        <p class="section-subtitle">且成本更低</p>
+      </div>
+      <div class="logos-grid">
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="Claude 图标" />
+          <span class="logo-name">Claude</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/minimax-color.svg" alt="Minimax 图标" />
+          <span class="logo-name">Minimax</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/alibabacloud-color.svg" alt="阿里百炼 图标" />
+          <span class="logo-name">阿里百炼</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon logo-icon--white" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/anthropic.svg" alt="Anthropic 图标" />
+          <span class="logo-name">Anthropic</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/qwen-color.svg" alt="Qwen 图标" />
+          <span class="logo-name">Qwen</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/gemini-color.svg" alt="Gemini 图标" />
+          <span class="logo-name">Gemini</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/zhipu-color.svg" alt="智谱 图标" />
+          <span class="logo-name">智谱</span>
+        </article>
+
+        <article class="logo-card">
+          <img class="logo-icon logo-icon--white" src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg" alt="OpenAI 图标" />
+          <span class="logo-name">OpenAI</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" aria-label="服务特性区">
+      <div class="section-head">
+        <h2 class="section-title">高效便捷的模型应用服务</h2>
+      </div>
+      <div class="features-carousel-shell">
+        <div class="features-viewport" id="featuresViewport">
+          <div class="features-track" id="featuresTrack">
+          <div class="features-panel" aria-label="Panel 1">
+            <div class="features-grid">
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">更优价格</h3>
+                  <p class="feature-desc">多模型统一接入，按需调用，帮助你在保证质量的同时降低总体调用成本。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">免魔法科学上网</h3>
+                  <p class="feature-desc">国内网络环境即可快速访问主流模型能力，减少配置环节，提升接入效率。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">海外模型融合</h3>
+                  <p class="feature-desc">集成海外优秀模型生态，统一鉴权和计费逻辑，便于业务快速扩展。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">注册零门槛</h3>
+                  <p class="feature-desc">注册即用，文档清晰，上手成本低，适合个人开发者与团队快速验证。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="features-panel" aria-label="Panel 2">
+            <div class="features-grid">
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">数据安全</h3>
+                  <p class="feature-desc">传输与存储全链路保护，权限隔离与审计机制并行，保障业务数据安全。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">极速响应</h3>
+                  <p class="feature-desc">智能路由与节点调度降低延迟，支持高并发调用场景下的稳定响应。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">多端同步</h3>
+                  <p class="feature-desc">Web、移动端与服务端统一接口规范，实现配置与调用状态的快速同步。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">API 灵活接入</h3>
+                  <p class="feature-desc">兼容多种 SDK 与标准协议，按业务需求自由组合模型能力，开发更高效。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="features-panel features-panel-clone" aria-label="Panel 1 Clone" aria-hidden="true">
+            <div class="features-grid">
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">更优价格</h3>
+                  <p class="feature-desc">多模型统一接入，按需调用，帮助你在保证质量的同时降低总体调用成本。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">免魔法科学上网</h3>
+                  <p class="feature-desc">国内网络环境即可快速访问主流模型能力，减少配置环节，提升接入效率。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">海外模型融合</h3>
+                  <p class="feature-desc">集成海外优秀模型生态，统一鉴权和计费逻辑，便于业务快速扩展。</p>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="icon" aria-hidden="true"></div>
+                <div class="feature-content">
+                  <h3 class="feature-title">注册零门槛</h3>
+                  <p class="feature-desc">注册即用，文档清晰，上手成本低，适合个人开发者与团队快速验证。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="pagination" aria-label="特性面板分页">
+        <button class="page-dot is-active" type="button" data-index="0" aria-label="切换到面板 1"></button>
+        <button class="page-dot" type="button" data-index="1" aria-label="切换到面板 2"></button>
+      </div>
+    </section>
+
+    <section class="use-cases" aria-label="应用场景区">
+      <div class="section-head">
+        <h2 class="section-title">更广泛的应用场景</h2>
+      </div>
+
+      <div class="use-cases-viewport" id="useCasesViewport">
+        <button class="use-nav use-nav-prev" id="useCasesPrev" type="button" aria-label="上一项">
+          <svg class="use-nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14.5 5.5L8 12l6.5 6.5" />
+          </svg>
+        </button>
+
+        <div class="use-cases-track" id="useCasesTrack">
+          <article class="use-case-item is-clone" aria-label="场景 5 克隆" aria-hidden="true">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">营销文案生成</h3>
+                <p class="use-case-desc">面向多平台快速生成活动文案、落地页文案和投放素材，统一品牌语调并提升转化效率。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 05</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item" data-real-index="0" aria-label="场景 1">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">小说剧情短视频创作</h3>
+                <p class="use-case-desc">将小说设定快速转为分镜脚本和视频文案，配合模型生成封面与配图，提升内容产能。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 01</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item" data-real-index="1" aria-label="场景 2">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">企业知识库问答</h3>
+                <p class="use-case-desc">把内部文档和流程沉淀为知识库，配合检索增强生成，帮助团队快速获取准确信息。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 02</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item" data-real-index="2" aria-label="场景 3">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">智能客服助手</h3>
+                <p class="use-case-desc">通过多模型协同完成意图识别、知识检索和答案生成，打造更稳定的智能客服流程。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 03</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item" data-real-index="3" aria-label="场景 4">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">代码助手协作开发</h3>
+                <p class="use-case-desc">结合代码库上下文进行补全、重构建议与测试生成，帮助团队提升研发速度与代码质量。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 04</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item" data-real-index="4" aria-label="场景 5">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">营销文案生成</h3>
+                <p class="use-case-desc">面向多平台快速生成活动文案、落地页文案和投放素材，统一品牌语调并提升转化效率。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 05</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="use-case-item is-clone" aria-label="场景 1 克隆" aria-hidden="true">
+            <div class="use-case-inner">
+              <div class="use-case-text">
+                <h3 class="use-case-title">小说剧情短视频创作</h3>
+                <p class="use-case-desc">将小说设定快速转为分镜脚本和视频文案，配合模型生成封面与配图，提升内容产能。</p>
+                <a href="#" class="use-case-btn">立即查看</a>
+              </div>
+              <div class="use-case-visual">
+                <div class="illustration-placeholder">3D 插画占位 01</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="use-nav use-nav-next" id="useCasesNext" type="button" aria-label="下一项">
+          <svg class="use-nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M9.5 5.5L16 12l-6.5 6.5" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="use-cases-pagination" aria-label="应用场景分页">
+        <button class="use-dot is-active" type="button" data-index="0" aria-label="切换到场景 1"></button>
+        <button class="use-dot" type="button" data-index="1" aria-label="切换到场景 2"></button>
+        <button class="use-dot" type="button" data-index="2" aria-label="切换到场景 3"></button>
+        <button class="use-dot" type="button" data-index="3" aria-label="切换到场景 4"></button>
+        <button class="use-dot" type="button" data-index="4" aria-label="切换到场景 5"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="底部信息区">
+    <div class="footer-guarantees">
+      <div class="guarantee-item"><span class="guarantee-icon" aria-hidden="true"></span><span>全面售前售后</span></div>
+      <div class="guarantee-item"><span class="guarantee-icon" aria-hidden="true"></span><span>客户支持计划</span></div>
+      <div class="guarantee-item"><span class="guarantee-icon" aria-hidden="true"></span><span>专业技术保障</span></div>
+      <div class="guarantee-item"><span class="guarantee-icon" aria-hidden="true"></span><span>持续稳定服务</span></div>
+    </div>
+
+    <div class="footer-info-row">
+      <div class="footer-meta">
+        <p class="footer-copyright">© 2026 AI Platform. All Rights Reserved.</p>
+        <p class="footer-icp">ICP备案号：京ICP备XXXXXXXX号-X</p>
+      </div>
+
+      <div class="footer-qrcodes">
+        <div class="qrcode-block">
+          <img class="qrcode-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorldA" alt="扫码关注我们 A" />
+          <p class="qrcode-text">扫码关注我们</p>
+        </div>
+        <div class="qrcode-block">
+          <img class="qrcode-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorldB" alt="扫码关注我们 B" />
+          <p class="qrcode-text">扫码关注我们</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="floating-toolbar" aria-label="右侧固定悬浮工具栏">
+    <button class="floating-message" type="button" aria-label="消息通知">🔔</button>
+    <a href="#" class="toolbar-item">电话咨询</a>
+    <a href="#" class="toolbar-item">微信咨询</a>
+    <a href="#" class="toolbar-item">在线咨询</a>
+    <a href="#" class="toolbar-item">意见反馈</a>
+    <a href="#" class="toolbar-item">收起</a>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
