@@ -200,13 +200,26 @@ button,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   z-index: -1;
   pointer-events: none;
 }
 
-.hero-overlay {
+
+ .hero-overlay {
   z-index: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.68));
+  /* 修改这里：让最底部 100% 的地方完全变成你 hero-section 的背景色 #0b0d14 */
+  background: linear-gradient(
+    to bottom, 
+    rgba(11, 13, 20, 0.58) 0%, 
+    rgba(11, 13, 20, 0.68) 70%, 
+    rgba(11, 13, 20, 1) 100%
+  );
   pointer-events: none;
 }
 
@@ -430,6 +443,7 @@ button,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(180deg, var(--bg-base) 0%, #1a0a2e 100%);
 }
 
 .features .section-head {
@@ -509,32 +523,46 @@ button,
 
 .feature-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   min-height: 250px;
-  gap: 50px;
-  padding: 36px 52px;
-  border-radius: 50px;
-  border: 1px solid rgba(20, 28, 46, 0.95);
-  background: rgba(28, 30, 38, 0.56);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 10px 24px rgba(2, 6, 18, 0.24);
-  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+  gap: 36px;
+  padding: 30px 36px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: background-color 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
 }
 
 .feature-card:hover {
-  border-color: rgba(76, 101, 255, 0.78);
-  box-shadow: inset 0 0 12px rgba(148, 162, 255, 0.15), 0 14px 30px rgba(27, 35, 81, 0.32);
-  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+  transform: translateY(-4px);
 }
 
 .icon {
   width: 100px;
   height: 100px;
   flex: 0 0 100px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
-  background: linear-gradient(145deg, #46c0ff, #7f8dff);
-  box-shadow: 0 6px 14px rgba(70, 128, 255, 0.28);
+  background: transparent;
+  box-shadow: none;
+}
+
+.icon-img {
+  width: 76px;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .feature-content {
@@ -562,7 +590,7 @@ button,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(180deg, #101523 0%, #121225 100%);
+  background: linear-gradient(180deg, #1a0a2e 0%, #000000 100%);
 }
 
 .use-cases .section-head {
